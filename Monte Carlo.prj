@@ -1,27 +1,26 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="676141883" file="C:\Users\djb07104\Documents\GitHub\MC_scattering\Monte Carlo analysis.prj" location="C:\Users\djb07104\Documents\GitHub\MC_scattering" name="Monte Carlo analysis" target="target.mlapps" target-name="Package App">
-    <param.appname>Monte Carlo analysis</param.appname>
+  <configuration build-checksum="3202173708" file="C:\Users\djb07104\Documents\GitHub\MC_scattering\Monte Carlo.prj" location="C:\Users\djb07104\Documents\GitHub\MC_scattering" name="Monte Carlo" target="target.mlapps" target-name="Package App">
+    <param.appname>Monte Carlo</param.appname>
     <param.authnamewatermark>Jonathan McKendry</param.authnamewatermark>
     <param.email>jonathan.mckendry@strath.ac.uk</param.email>
     <param.company />
     <param.icon />
     <param.icons />
-    <param.summary>Monte Carlo result analysis</param.summary>
-    <param.description>Analyses saved results of Monte Carlo analysis. Analyses packet weight distribution across a received "grid" and the total weight incident within a given area, provided as outputs.</param.description>
+    <param.summary>Monte Carlo light scattering</param.summary>
+    <param.description>Code that scatters photon "packets" and outputs results for further analysis.</param.description>
     <param.screenshot />
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
-    <param.guid>50146f59-aeda-4e2e-9777-e92ffcb21a68</param.guid>
+    <param.guid>788610ad-ca07-4e13-a325-c833eee2042d</param.guid>
     <unset>
       <param.company />
       <param.icon />
       <param.icons />
       <param.screenshot />
-      <param.version />
       <param.products.name />
       <param.products.id />
       <param.products.version />
@@ -29,11 +28,19 @@
       <param.output />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}\Monte_Carlo_analysis.mlapp</file>
+      <file>${PROJECT_ROOT}\Monte_Carlo.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\photon_packet_analysis.m</file>
-      <file>${PROJECT_ROOT}\target_plane_analysis.m</file>
+      <file>${PROJECT_ROOT}\abs_kill.m</file>
+      <file>${PROJECT_ROOT}\boost.m</file>
+      <file>${PROJECT_ROOT}\create_photons.m</file>
+      <file>${PROJECT_ROOT}\create_photons_ideal.m</file>
+      <file>${PROJECT_ROOT}\Custom_setup.m</file>
+      <file>${PROJECT_ROOT}\Lambertian_setup.m</file>
+      <file>${PROJECT_ROOT}\MC_scatter.m</file>
+      <file>${PROJECT_ROOT}\move_packets.m</file>
+      <file>${PROJECT_ROOT}\path_length_kill.m</file>
+      <file>${PROJECT_ROOT}\scatter_packets.m</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />

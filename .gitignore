@@ -1,3 +1,4 @@
 # Ignore .mat files
 *.mat
 *.csv
+*.mlapp
