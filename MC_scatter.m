@@ -30,7 +30,7 @@ switch sourcetype
     case "Ideal"
         [weights,start_pos,dir,psi] = create_photons_ideal(packets,pixels); % Initialises photon packet angles, weights, positions and direction vectors
     case "Lambertian"
-        [weights,start_pos,dir] = create_photons(packets,pixels,fitfunc,semiangle);
+        [weights,start_pos,dir,psi] = create_photons(packets,pixels,fitfunc,semiangle);
     case "Custom"
         [weights,start_pos,dir,psi] = create_photons(packets,pixels,fitfunc);
 end

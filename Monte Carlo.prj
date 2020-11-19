@@ -1,13 +1,13 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3202173708" file="C:\Users\djb07104\Documents\GitHub\MC_scattering\Monte Carlo.prj" location="C:\Users\djb07104\Documents\GitHub\MC_scattering" name="Monte Carlo" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1998252911" file="C:\Users\Jonathan\Documents\Github\MC_scattering\Monte Carlo.prj" location="C:\Users\Jonathan\Documents\Github\MC_scattering" name="Monte Carlo" target="target.mlapps" target-name="Package App">
     <param.appname>Monte Carlo</param.appname>
     <param.authnamewatermark>Jonathan McKendry</param.authnamewatermark>
     <param.email>jonathan.mckendry@strath.ac.uk</param.email>
     <param.company />
     <param.icon />
     <param.icons />
-    <param.summary>Monte Carlo light scattering</param.summary>
-    <param.description>Code that scatters photon "packets" and outputs results for further analysis.</param.description>
+    <param.summary>Monte Carlo light analysis</param.summary>
+    <param.description>Monte Carlo modelling of light absorption and scattering. Outputs saved to disk (full history of photon packet positions and weights) for further analysis.</param.description>
     <param.screenshot />
     <param.version>1.1</param.version>
     <param.products.name />
@@ -15,7 +15,7 @@
     <param.products.version />
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
-    <param.guid>788610ad-ca07-4e13-a325-c833eee2042d</param.guid>
+    <param.guid>0ac8d4b3-a08a-4719-b916-d72f5034a29a</param.guid>
     <unset>
       <param.company />
       <param.icon />
@@ -45,11 +45,11 @@
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\djb07104\Documents\GitHub" name="MC_scattering" optional="false">C:\Users\djb07104\Documents\GitHub\MC_scattering</file>
+      <file location="C:\Users\Jonathan\Documents\Github" name="MC_scattering" optional="false">C:\Users\Jonathan\Documents\Github\MC_scattering</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2020b</root>
+      <root>C:\Program Files\MATLAB\R2020a</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
       </toolboxes>
