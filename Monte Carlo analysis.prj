@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="676141883" file="C:\Users\djb07104\Documents\GitHub\MC_scattering\Monte Carlo analysis.prj" location="C:\Users\djb07104\Documents\GitHub\MC_scattering" name="Monte Carlo analysis" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2473210463" file="C:\Users\djb07104\Documents\GitHub\MC_scattering\Monte Carlo analysis.prj" location="C:\Users\djb07104\Documents\GitHub\MC_scattering" name="Monte Carlo analysis" target="target.mlapps" target-name="Package App">
     <param.appname>Monte Carlo analysis</param.appname>
     <param.authnamewatermark>Jonathan McKendry</param.authnamewatermark>
     <param.email>jonathan.mckendry@strath.ac.uk</param.email>
@@ -7,9 +7,11 @@
     <param.icon />
     <param.icons />
     <param.summary>Monte Carlo result analysis</param.summary>
-    <param.description>Analyses saved results of Monte Carlo analysis. Analyses packet weight distribution across a received "grid" and the total weight incident within a given area, provided as outputs.</param.description>
+    <param.description>Analyses saved results of Monte Carlo analysis. Analyses packet weight distribution across a received "grid" and the total weight incident within a given area, provided as outputs.
+
+V1.1: all planes can now be analysed (not just z-plane)</param.description>
     <param.screenshot />
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -21,7 +23,6 @@
       <param.icon />
       <param.icons />
       <param.screenshot />
-      <param.version />
       <param.products.name />
       <param.products.id />
       <param.products.version />
