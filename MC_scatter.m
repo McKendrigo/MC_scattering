@@ -1,7 +1,6 @@
-%%% INPUTS %%%
 
-
-function MC_scatter(a,b,packets,total_loops,max_scatter,pmax,sourcetype,semiangle,pixels)
+function MC_scatter(a,b,packets,total_loops,max_scatter,pmax,sourcetype,...
+    semiangle,pixels,scatt_type,Rayleigh,Mie,upsilon,f,g)
 % 1) - Define fit function for Psi versus random variable relationship 
 % (if required).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -67,7 +66,13 @@ scatter_cntr = scatter_cntr + 1; % Increment scattering event counter
 [weights] = boost(weights,active_packets);
 
 % g) Scatter active packets
-[dir,psi] = scatter_packets(dir,psi,active_packets); % Scatter active packets
+switch scatt_type
+    case "Isotropic"
+        [dir,psi] = scatter_packets(dir,psi,active_packets); % Scatter active packets
+    case "H-G"
+        [PDFfit] = HG(Rayleigh,Mie,upsilon,g,f); % Generate the H-G PDF
+        [dir,psi] = scatter_packets_HG(dir,psi,active_packets,PDFfit); % Scatter active packets
+end
 
 end
 % h) Save position and weights history

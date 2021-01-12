@@ -1,7 +1,7 @@
 %%% Scatter packets - ISOTROPIC SCATTERING - update direction cosines
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [dir,psi] = scatter_packets(dir,prev_psi,active_index)
+function [dir,psi] = scatter_packets_HG(dir,prev_psi,active_index,PDFfit)
 
 % First, we create the new scattering angles for each packet
 t1 = rand(length(dir),1); % Dice roll for Elevation/Scattering (Psi) angles - all packets
@@ -10,7 +10,7 @@ t2 = rand(length(dir),1); % NEW CODE = Dice roll for Azimuthal scattering angle 
 t1(active_index==0) = NaN; % t1 for inactive packets set to "NaN"
 t2(active_index==0) = NaN; % t2 for inactive packets set to "NaN"
 
-scatter_psi = acos(1-(2*t1)); %%% psi formula for isotropic scattering
+scatter_psi = PDFfit(t1); %%% psi angles found using fit to H-G PDF
 psi = scatter_psi + prev_psi; % New psi angle of travel, relative to z-axis
 theta = 2*pi*t2; % NEW CODE = update azimuthal scattering angles
 
