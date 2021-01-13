@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1998252911" file="C:\Users\Jonathan\Documents\Github\MC_scattering\Monte Carlo.prj" location="C:\Users\Jonathan\Documents\Github\MC_scattering" name="Monte Carlo" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="930723191" file="C:\Users\Jonathan\Documents\Github\MC_scattering\Monte Carlo.prj" location="C:\Users\Jonathan\Documents\Github\MC_scattering" name="Monte Carlo" target="target.mlapps" target-name="Package App">
     <param.appname>Monte Carlo</param.appname>
     <param.authnamewatermark>Jonathan McKendry</param.authnamewatermark>
     <param.email>jonathan.mckendry@strath.ac.uk</param.email>
@@ -7,9 +7,9 @@
     <param.icon />
     <param.icons />
     <param.summary>Monte Carlo light analysis</param.summary>
-    <param.description>Monte Carlo modelling of light absorption and scattering. Outputs saved to disk (full history of photon packet positions and weights) for further analysis.</param.description>
+    <param.description>Monte Carlo modelling of light absorption and scattering. Outputs saved to disk (full history of photon packet positions and weights) for further analysis. Isotropic or Heyney-Greenstein scattering can now be chosen.</param.description>
     <param.screenshot />
-    <param.version>1.1</param.version>
+    <param.version>1.2</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />

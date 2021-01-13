@@ -83,8 +83,15 @@ end
 end
 % h) Save position and weights history
 savename = horzcat('Loop',num2str(num_loops),'.mat');
-save(savename,'positions','a','b','packets','total_loops','max_scatter',...
-    'pmax','sourcetype','semiangle','pixels');
+switch scatt_type
+    case "Isotropic"
+        save(savename,'positions','a','b','packets','total_loops','max_scatter',...
+            'pmax','sourcetype','semiangle','pixels');
+    case "H-G"
+        save(savename,'positions','a','Rayleigh','Mie','upsilon','f','g',...
+            'packets','total_loops','max_scatter','pmax','sourcetype',...
+            'scatt_type','semiangle','pixels');
+end
 end
 
 % Simulation complete. Tidying up:
