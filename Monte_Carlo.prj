@@ -1,12 +1,12 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="930723191" file="C:\Users\Jonathan\Documents\Github\MC_scattering\Monte Carlo.prj" location="C:\Users\Jonathan\Documents\Github\MC_scattering" name="Monte Carlo" target="target.mlapps" target-name="Package App">
-    <param.appname>Monte Carlo</param.appname>
+  <configuration build-checksum="1915788028" file="C:\Users\Jonathan\Documents\Github\MC_scattering\Monte_Carlo.prj" location="C:\Users\Jonathan\Documents\Github\MC_scattering" name="Monte_Carlo" target="target.mlapps" target-name="Package App">
+    <param.appname>Monte_Carlo</param.appname>
     <param.authnamewatermark>Jonathan McKendry</param.authnamewatermark>
     <param.email>jonathan.mckendry@strath.ac.uk</param.email>
     <param.company />
     <param.icon />
     <param.icons />
-    <param.summary>Monte Carlo light analysis</param.summary>
+    <param.summary>Monte Carlo scattering app.</param.summary>
     <param.description>Monte Carlo modelling of light absorption and scattering. Outputs saved to disk (full history of photon packet positions and weights) for further analysis. Isotropic or Heyney-Greenstein scattering can now be chosen.</param.description>
     <param.screenshot />
     <param.version>1.2</param.version>
@@ -15,7 +15,7 @@
     <param.products.version />
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
-    <param.guid>0ac8d4b3-a08a-4719-b916-d72f5034a29a</param.guid>
+    <param.guid>583e5d3f-542f-4f22-8874-10b4101ca51a</param.guid>
     <unset>
       <param.company />
       <param.icon />
@@ -36,11 +36,13 @@
       <file>${PROJECT_ROOT}\create_photons.m</file>
       <file>${PROJECT_ROOT}\create_photons_ideal.m</file>
       <file>${PROJECT_ROOT}\Custom_setup.m</file>
+      <file>${PROJECT_ROOT}\HG.m</file>
       <file>${PROJECT_ROOT}\Lambertian_setup.m</file>
       <file>${PROJECT_ROOT}\MC_scatter.m</file>
       <file>${PROJECT_ROOT}\move_packets.m</file>
       <file>${PROJECT_ROOT}\path_length_kill.m</file>
       <file>${PROJECT_ROOT}\scatter_packets.m</file>
+      <file>${PROJECT_ROOT}\scatter_packets_HG.m</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
