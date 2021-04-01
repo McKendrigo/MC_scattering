@@ -1,28 +1,31 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4220270551" file="C:\Users\Jonathan\Documents\GitHub\MC_scattering\Monte_Carlo.prj" location="C:\Users\Jonathan\Documents\GitHub\MC_scattering" name="Monte_Carlo" target="target.mlapps" target-name="Package App">
-    <param.appname>Monte_Carlo</param.appname>
+  <configuration file="C:\Users\Jonathan\Documents\GitHub\MC_scattering\untitled1.prj" location="C:\Users\Jonathan\Documents\GitHub\MC_scattering" name="untitled1" target="target.mlapps" target-name="Package App">
+    <param.appname>untitled1</param.appname>
     <param.authnamewatermark>Jonathan McKendry</param.authnamewatermark>
     <param.email>jonathan.mckendry@strath.ac.uk</param.email>
     <param.company>Institute of Photonics</param.company>
     <param.icon />
     <param.icons />
-    <param.summary>Monte Carlo scattering app.</param.summary>
-    <param.description>Monte Carlo modelling of light absorption and scattering. Outputs saved to disk (full history of photon packet positions and weights) for further analysis. Isotropic or Heyney-Greenstein scattering can now be chosen.</param.description>
+    <param.summary />
+    <param.description />
     <param.screenshot />
-    <param.version>1.2</param.version>
+    <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
-    <param.guid>583e5d3f-542f-4f22-8874-10b4101ca51a</param.guid>
+    <param.guid>2fcd2d37-b0d4-468e-b03c-ad69a6dfd5a1</param.guid>
     <unset>
       <param.authnamewatermark />
       <param.email />
       <param.company />
       <param.icon />
       <param.icons />
+      <param.summary />
+      <param.description />
       <param.screenshot />
+      <param.version />
       <param.products.name />
       <param.products.id />
       <param.products.version />
@@ -32,20 +35,7 @@
     <fileset.main>
       <file>${PROJECT_ROOT}\Monte_Carlo.mlapp</file>
     </fileset.main>
-    <fileset.depfun>
-      <file>${PROJECT_ROOT}\abs_kill.m</file>
-      <file>${PROJECT_ROOT}\boost.m</file>
-      <file>${PROJECT_ROOT}\create_photons.m</file>
-      <file>${PROJECT_ROOT}\create_photons_ideal.m</file>
-      <file>${PROJECT_ROOT}\Custom_setup.m</file>
-      <file>${PROJECT_ROOT}\HG.m</file>
-      <file>${PROJECT_ROOT}\Lambertian_setup.m</file>
-      <file>${PROJECT_ROOT}\MC_scatter.m</file>
-      <file>${PROJECT_ROOT}\move_packets.m</file>
-      <file>${PROJECT_ROOT}\path_length_kill.m</file>
-      <file>${PROJECT_ROOT}\scatter_packets.m</file>
-      <file>${PROJECT_ROOT}\scatter_packets_HG.m</file>
-    </fileset.depfun>
+    <fileset.depfun />
     <fileset.resources />
     <fileset.package />
     <build-deliverables>
